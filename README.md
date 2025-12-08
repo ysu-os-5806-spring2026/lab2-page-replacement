@@ -65,86 +65,88 @@ You may use any C++ compiler that supports C++17.
 ### Compile:
 ```bash
 g++ -std=c++17 -O2 -o pager src/main.cpp
+```
 
-
-Run:
+### Run:
+```bash
 ./pager --algo=CLOCK --frames=4 --input=tests/trace1.txt
+```
 
-Supported --algo= values:
+### Supported --algo= values:
+```
 FIFO
 SC
 CLOCK
 AGING
 OPT
+```
 
-📝 Expected Output
+### Expected Output
 
 A successful run should print:
 
+```
 Algorithm: CLOCK
 Frames: 4
 Total references: 14
 Page faults: 9
 Fault rate: 64.3%
+```
 
 
 (Your exact results depend on the algorithm implementation.)
 
-🧪 Testing (Local)
+###  Testing (Local)
 
 You can run the same script used by the autograder:
-
+```bash
 chmod +x tests/run_tests.sh
 ./tests/run_tests.sh
+```
 
 
 This will:
 
-Compile your code
+- Compile your code
 
-Run several algorithms
+- Run several algorithms
 
-Check basic output formatting
+- Check basic output formatting
 
-📌 Autograding (GitHub Classroom)
+### Autograding (GitHub Classroom)
 
 Every time you git commit and git push, GitHub Actions will:
 
-Compile your code
+1. Compile your code
 
-Run run_tests.sh
+2. Run run_tests.sh
 
-Assign a score based on correctness
+3. Assign a score based on correctness
 
 You may view results under the Actions tab of your GitHub repository.
 
-📰 Lab Report Requirement
+### 📰 Lab Report Requirement
 
 In addition to code, you must submit a one-page PDF report through Blackboard summarizing:
 
-A short explanation of each algorithm
+1. A short explanation of each algorithm
 
-Experimental results (page fault counts for all traces)
+2. Experimental results (page fault counts for all traces)
 
-Comparison and analysis of algorithm behavior
+3. Comparison and analysis of algorithm behavior
 
-Reflection on what you learned
+4. Reflection on what you learned
 
 Report details are provided in the Lab 2 handout.
 
-📅 Due Date
+### 📅 Due Date
 
 January 25, 2026
 
-Code: submitted via GitHub Classroom
+- Code: submitted via GitHub Classroom
 
-Report: submitted via Blackboard
+- Report: submitted via Blackboard
 
 Both components are required for full credit.
-
-🆘 Need Help?
-
-Contact your instructor or visit office hours for debugging assistance.
-Remember: You may discuss ideas with classmates, but all code must be your own.
 
 Good luck, and have fun exploring page replacement strategies!
